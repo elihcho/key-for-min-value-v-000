@@ -5,8 +5,10 @@ def key_for_min_value(name_hash)
   if name_hash == {}
     return nil
   else
-    name_hash.each do |furniture, price|
-      if name_hash["furniture"]
+    prices = []
+    name_hash.collect do |furniture, price|
+      prices << name_hash["furniture"]
     end
+    prices[0] >
   end
 end
